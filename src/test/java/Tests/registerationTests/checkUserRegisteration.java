@@ -54,7 +54,7 @@ public class checkUserRegisteration extends TestBase {
 		//RegisterationPageObject.registerNewUser(firstName,lastName,password,FirstName_Address,LastName_Address,Address,City,State,zipCode,Country,Info,mobile,Alias);
 		assertTrue(myAccountPageObject.checkMyAccountTitle_isDisplayed());
 		myAccountPageObject.signOut();
-		/////nada////
+		
 	}
 
 }

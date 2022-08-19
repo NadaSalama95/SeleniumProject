@@ -37,6 +37,7 @@ public class checkLoginwithValidUserNameAndPassword extends TestBase {
 		signInPageObject.clickOnSignIn();
 		myAccountPageObject=new MyAccountPage(driver);
 		assertTrue(myAccountPageObject.checkMyAccountTitle_isDisplayed());
+		myAccountPageObject.signOut();
 	}
 
 }
