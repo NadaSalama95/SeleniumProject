@@ -32,7 +32,6 @@ public class TestBase {
 			driver=new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.navigate().to("http://automationpractice.com/index.php");
 		
 	}

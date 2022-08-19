@@ -14,9 +14,17 @@ public class MyAccountPage extends PageBase{
 	@FindBy(id = "center_column")
 	WebElement MyAccount;
 	
+	@FindBy(className = "logout")
+	WebElement signOut;
+	
+	
 	public boolean checkMyAccountTitle_isDisplayed()
 	{
 		return MyAccount.isDisplayed();
+	}
+	public void signOut()
+	{
+		click(signOut);
 	}
 	
 

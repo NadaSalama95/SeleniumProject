@@ -6,7 +6,7 @@
       <class name="Tests.registerationTests.checkUserRegisteration">
         <methods>
           <include name="stopDriver"/>
-          <include name="checkUserRegistrationWithValidData"/>
+          <include name="checkUserRegistrationWithValidData" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.registerationTests.checkUserRegisteration -->

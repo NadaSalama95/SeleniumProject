@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12915" started-at="2022-08-19T21:43:11Z" finished-at="2022-08-19T21:43:24Z">
+  <suite name="Default suite" duration-ms="20665" started-at="2022-08-19T22:35:20Z" finished-at="2022-08-19T22:35:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12915" started-at="2022-08-19T21:43:11Z" finished-at="2022-08-19T21:43:24Z">
+    <test name="Default test" duration-ms="20665" started-at="2022-08-19T22:35:20Z" finished-at="2022-08-19T22:35:41Z">
       <class name="Tests.registerationTests.checkUserRegisteration">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="setup" is-config="true" duration-ms="12122" started-at="2022-08-19T21:42:59Z" finished-at="2022-08-19T21:43:11Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="setup" is-config="true" duration-ms="11303" started-at="2022-08-19T22:35:09Z" finished-at="2022-08-19T22:35:20Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkUserRegistrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="checkUserRegistrationWithValidData" duration-ms="12395" started-at="2022-08-19T21:43:12Z" data-provider="RegisterTestData" finished-at="2022-08-19T21:43:24Z">
+        <test-method status="PASS" signature="checkUserRegistrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="checkUserRegistrationWithValidData" duration-ms="19514" started-at="2022-08-19T22:35:22Z" data-provider="RegisterTestData" finished-at="2022-08-19T22:35:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nadasalama8@gmail.com]]>
+                <![CDATA[nadasalama7@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -94,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserRegistrationWithValidData -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="stopDriver" is-config="true" duration-ms="791" started-at="2022-08-19T21:43:24Z" finished-at="2022-08-19T21:43:25Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="stopDriver" is-config="true" duration-ms="870" started-at="2022-08-19T22:35:41Z" finished-at="2022-08-19T22:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
