@@ -14,7 +14,7 @@ public class ExcelReader {
 	
 	public FileInputStream getFileInputStream()
 	{
-		String filepath = System.getProperty("user.dir")+"/src/test/java/TestData/LoginTestData.xlsx";
+		String filepath = System.getProperty("user.dir")+"/src/test/java/TestData/TestData.xlsx";
 		File srcFile= new File(filepath);
 		try {
 			fis=new FileInputStream(srcFile);
@@ -23,15 +23,15 @@ public class ExcelReader {
 		}
 		return fis;
 	}
-	public Object [][] getExcelData() throws IOException
+	public Object [][] getExcelData(int numberOfColumn, String sheetName) throws IOException
 	{
 		fis= getFileInputStream();
 		
 			XSSFWorkbook wb=new XSSFWorkbook(fis);
 		
-		XSSFSheet sheet= wb.getSheet("sheet1");
+		XSSFSheet sheet= wb.getSheet(sheetName);
 		int TotalNumberOfRows= sheet.getLastRowNum()+1;
-		int TotalNumberOfcol=2;
+		int TotalNumberOfcol=numberOfColumn;
 		
 		String[][] arrayExcelData=new String[TotalNumberOfRows][TotalNumberOfcol];
 		

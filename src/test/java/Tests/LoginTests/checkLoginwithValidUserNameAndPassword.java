@@ -18,7 +18,7 @@ public class checkLoginwithValidUserNameAndPassword extends TestBase {
 	public Object [][] userLoginData() throws IOException
 	{
 		Excel=new ExcelReader();
-		return Excel.getExcelData();
+		return Excel.getExcelData(2,"LoginTestData");
 	}
 	
 	@Test(dataProvider = "LoginTestData")
