@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Tests.registerationTests.checkUserRegisteration">
+        <methods>
+          <include name="stopDriver"/>
+          <include name="checkUserRegistrationWithValidData"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.registerationTests.checkUserRegisteration -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
