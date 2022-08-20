@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20665" started-at="2022-08-19T22:35:20Z" finished-at="2022-08-19T22:35:41Z">
+  <suite name="Suite" duration-ms="37189" started-at="2022-08-20T06:49:56Z" finished-at="2022-08-20T06:50:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20665" started-at="2022-08-19T22:35:20Z" finished-at="2022-08-19T22:35:41Z">
+    <test name="TC1" duration-ms="13408" started-at="2022-08-20T06:49:56Z" finished-at="2022-08-20T06:50:09Z">
       <class name="Tests.registerationTests.checkUserRegisteration">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="setup" is-config="true" duration-ms="11303" started-at="2022-08-19T22:35:09Z" finished-at="2022-08-19T22:35:20Z">
+        <test-method status="PASS" signature="checkUserRegistrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@5025a98f]" name="checkUserRegistrationWithValidData" duration-ms="12113" started-at="2022-08-20T06:49:57Z" data-provider="RegisterTestData" finished-at="2022-08-20T06:50:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkUserRegistrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="checkUserRegistrationWithValidData" duration-ms="19514" started-at="2022-08-19T22:35:22Z" data-provider="RegisterTestData" finished-at="2022-08-19T22:35:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nadasalama7@gmail.com]]>
+                <![CDATA[nadasalama5@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -94,11 +83,115 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserRegistrationWithValidData -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:Tests.registerationTests.checkUserRegisteration@29ca901e]" name="stopDriver" is-config="true" duration-ms="870" started-at="2022-08-19T22:35:41Z" finished-at="2022-08-19T22:35:42Z">
+      </class> <!-- Tests.registerationTests.checkUserRegisteration -->
+    </test> <!-- TC1 -->
+    <test name="TC2" duration-ms="23742" started-at="2022-08-20T06:50:09Z" finished-at="2022-08-20T06:50:33Z">
+      <class name="Tests.LoginTests.checkLoginwithValidUserNameAndPassword">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Tests.LoginTests.checkLoginwithValidUserNameAndPassword@13a5fe33]" name="setup" is-config="true" duration-ms="18475" started-at="2022-08-20T06:49:38Z" finished-at="2022-08-20T06:49:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="checkLoginwithValidUserNameAndPassword(java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests.checkLoginwithValidUserNameAndPassword@13a5fe33]" name="checkLoginwithValidUserNameAndPassword" duration-ms="23672" started-at="2022-08-20T06:50:10Z" data-provider="LoginTestData" finished-at="2022-08-20T06:50:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nadasalama9@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nada_0987]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.className: logout' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.className: logout' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at pages.PageBase.click(PageBase.java:29)
+at pages.MyAccountPage.signOut(MyAccountPage.java:27)
+at Tests.LoginTests.checkLoginwithValidUserNameAndPassword.checkLoginwithValidUserNameAndPassword(checkLoginwithValidUserNameAndPassword.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".logout"}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'E0463941', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9eb95c1eaf59976eb379e32533ad12c0, findElement {using=class name, value=logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SalamaN3\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52147/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb95c1eaf59976eb379e32533ad12c0
+at sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginwithValidUserNameAndPassword -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:Tests.LoginTests.checkLoginwithValidUserNameAndPassword@13a5fe33]" name="stopDriver" is-config="true" duration-ms="813" started-at="2022-08-20T06:50:33Z" finished-at="2022-08-20T06:50:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- Tests.registerationTests.checkUserRegisteration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.LoginTests.checkLoginwithValidUserNameAndPassword -->
+    </test> <!-- TC2 -->
+  </suite> <!-- Suite -->
 </testng-results>

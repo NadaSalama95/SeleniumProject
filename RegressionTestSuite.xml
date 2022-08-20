@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-<parameter name="browser" value="firefox"></parameter>
-  <test name="Test">
+<parameter name="browser" value="chrome"></parameter>
+  <test name="TC1">
     <classes>
       <class name="Tests.registerationTests.checkUserRegisteration"/>
+    </classes>
+  </test>
+  <test name="TC2">
+    <classes>
+      <class name="Tests.LoginTests.checkLoginwithValidUserNameAndPassword"/>
     </classes>
   </test> 
 </suite> 

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="TC2(failed)">
     <classes>
-      <class name="Tests.registerationTests.checkUserRegisteration">
+      <class name="Tests.LoginTests.checkLoginwithValidUserNameAndPassword">
         <methods>
+          <include name="checkLoginwithValidUserNameAndPassword" invocation-numbers="0"/>
           <include name="stopDriver"/>
-          <include name="checkUserRegistrationWithValidData" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.registerationTests.checkUserRegisteration -->
+      </class> <!-- Tests.LoginTests.checkLoginwithValidUserNameAndPassword -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TC2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

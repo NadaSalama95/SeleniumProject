@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browser" value="firefox"/>
-  <test thread-count="5" name="Test(failed)">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="TC2(failed)">
     <classes>
-      <class name="Tests.registerationTests.checkUserRegisteration">
+      <class name="Tests.LoginTests.checkLoginwithValidUserNameAndPassword">
         <methods>
+          <include name="checkLoginwithValidUserNameAndPassword" invocation-numbers="0"/>
           <include name="stopDriver"/>
-          <include name="checkUserRegistrationWithValidData"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.registerationTests.checkUserRegisteration -->
+      </class> <!-- Tests.LoginTests.checkLoginwithValidUserNameAndPassword -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TC2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
